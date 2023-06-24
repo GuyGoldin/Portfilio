@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guy Goldin</title>
+    <!-- box icon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- navbar start -->
+    <header class="header">
+        <a href="./index.html" class="logo">Portfolio</a>
+
+        <i class="bx bx-menu" id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+
+        </nav>
+    </header>
+    <!-- navbar end -->
+
+    <!-- home section design start -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, It's Me</h3>
+            <h1>Guy Goldin</h1>
+            <h3>And I'm a <span>Frontend Developer</span></h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis, molestiae cupiditate Lorem ipsum
+                dolor, sit amet consectetur adipisicing elit. Voluptate sit possimus, quae error maiores explicabo
+                doloratione expedita quasi.
+
+            </p>
+            <div class="social-media">
+                <a href="https://www.facebook.com/guy.goldin.3/" target="_blank"><i class="bx bxl-facebook"></i></a>
+                <a href="https://www.instagram.com/guygoldin13/" target="_blank"><i class="bx bxl-instagram"></i></a>
+                <a href="https://github.com/GuyGoldin" target="_blank"><i class="bx bxl-github"></i></a>
+                <a href="https://wa.me/+972522898661" target="_blank"><i class="bx bxl-whatsapp"></i></a>
+            </div>
+
+        </div>
+        <div class="home-img">
+            <img src="./images/pic1.jpg" alt="">
+        </div>
+    </section>
+    <!-- home section design end -->
+
+    <!-- about section design start -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="images/pic1.jpg" alt="">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Frontend Developer</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, culpa ullam quia dolorem laborum, vel
+                ipsum deleniti facere molestiae rem, impedit eius! Facere magnam, totam odio voluptas commodi quasi
+                temporibus nihil, et natus culpa vel, tempora eaque debitis repudiandae. Vero corporis debitis vel
+                perferendis quis.</p>
+
+        </div>
+    </section>
+    <!-- about section design end -->
+
+    <!-- services section design start -->
+    <section class="services" id="services">
+        <h2 class="heading">My <span>Services</span></h2>
+
+        <div class="services-container">
+            <div class="services-box">
+                <i class="bx bx-code-alt"></i>
+                <h3>Web Development</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas minus quia, nihil nisi tempore nulla
+                    illum soluta voluptatum eaque quod.</p>
+
+            </div>
+            <div class="services-box">
+                <i class="bx bxs-paint"></i>
+                <h3>Graphic Design</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas minus quia, nihil nisi tempore nulla
+                    illum soluta voluptatum eaque quod.</p>
+
+            </div>
+            <div class="services-box">
+                <i class='bx bx-bar-chart-alt'></i>
+                <h3>Digital Marketing</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas minus quia, nihil nisi tempore nulla
+                    illum soluta voluptatum eaque quod.</p>
+
+            </div>
+        </div>
+    </section>
+    <!-- services section design end -->
+
+    <!-- portfolio section design start -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Latest <span>Project</span></h2>
+
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="./images/portfolio1.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>Techit</h4>
+                    <p>JavaScript + Bootstrap</p>
+                    <a href="../techit/index.html" target="_blank"><i class='bx bx-link-external'></i></a>
+
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="./images/portfolio2.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>My Account</h4>
+                    <p>javascript es6+</p>
+                    <a href="../myaccount/index.html" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="./images/portfolio3.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>Manage-U</h4>
+                    <p>TypeScript</p>
+                    <a href="../manageu/index.html" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+    </section>
+    <!-- contact section design start -->
+    <center>
+        <div class="container">
+            <div class="overlay" id="contact">
+                <form onsubmit="event.preventDefault(); validateForm()">
+                    <h1 class="heading">Contact <span>Me!</span></h1>
+
+                    <input type="text" id="name" placeholder="Your Name" /><br />
+                    <small class="error"></small>
+                    <br />
+                    <input type="text" id="lastname" placeholder="Your Last name" /><br />
+                    <small class="error"></small>
+                    <br />
+
+                    <input type="number" id="mobileNMB" placeholder="Mobile Number" /><br />
+                    <small class="error"></small>
+                    <br />
+
+                    <input type="email" id="email" placeholder="Your Email" /><br />
+                    <small class="error"></small>
+                    <br>
+                    <textarea id="message" placeholder="Your Message" rows="6"></textarea><br />
+                    <small class="error"></small>
+                    <br />
+                    <br>
+
+                    <div class="center">
+                        <input type="submit" value="Send Message" />
+                        <br /><br />
+                        <h1 id="success"></h1>
+                        <br />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </center>
+    <!-- contact section design end -->
+
+    <!-- footer section design start -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2023 by GuyGoldin | All Rights Reserved.</p>
+        </div>
+
+        <div class="footer-icon">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+    <!-- footer section design end -->
+
+    <script src="js/js.js"></script>
+    <script src="contact.js"></script>
+</body>
+
+</html>
